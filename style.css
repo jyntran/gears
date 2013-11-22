@@ -1,0 +1,511 @@
+/*
+Theme Name: Gears
+Description: Child theme for Required+ theme
+Author: J. Tran
+Template: required-foundation
+*/
+
+@import url("../required-foundation/style.css");
+
+/* write custom css below */
+
+
+/***************************************
+   GENERAL
+ ****************************************/
+
+body {
+  font-size: 100%;
+}
+
+body, page, .entry_content,
+h1, h2, h3, h4, h5, h6 {
+  color: #999999;
+  text-transform: uppercase;
+  font-family: calibri, sans-serif;
+}
+
+::selection {
+  background: #dddddd; /* Safari */
+}
+::-moz-selection {
+  background: #dddddd; /* Firefox */
+}
+
+a {
+  color: #999999;
+  text-decoration: none;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+a:hover {
+  color: #CEE66A;
+}
+
+.entry-header h1, h2 {
+  letter-spacing: 5px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  width: 100%;
+  border-bottom: 1px solid #999;
+  text-align: left;
+}
+
+h3 {
+  letter-spacing: 3px;
+  font-size: 1.2em;
+}
+
+#site-title {
+  text-align: center;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+  margin: 50px 0 20px 0;
+}
+
+#footer {
+  border-top: 1px solid #999;
+  text-align: center;
+  margin: 40px auto;
+  text-align: center;
+  padding: 12px;
+}
+
+.smallText, .gearCaption {
+  letter-spacing: 5px;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.subheading {
+  letter-spacing: 5px;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+@media (max-width: 768px) and (min-width: 0px) {
+
+  #site-title {
+    font-size: 1.6em;
+    margin: 15px;
+  }
+
+}
+
+
+/***************************************
+   PAGE
+ ****************************************/
+ 
+.page {
+  text-align: left;
+}
+
+.page-title {
+  display: none;
+}
+
+
+/***************************************
+   ENTRY
+ ****************************************/
+
+.entry-meta {
+  display: none;
+}
+
+
+/***************************************
+   GEAR THUMBNAIL
+   class: .gearThumb around <a>
+ ****************************************/
+
+.gearTable {
+  width: 600px;
+  margin: auto;
+  padding-left: 100px;
+}
+
+.gearCell {
+  width: 100px;
+}
+
+.gearSubtitle {
+  width: 200px;
+  vertical-align: middle;
+  font-size: 1.0em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 15px;
+}
+ 
+.gearThumb {
+  background: #000000 url('images/navigation/Gear-w.png');
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  margin: 0 2px;
+}
+
+.gearThumb:hover {
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+
+.gearThumb img {
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  width: 100px;
+  height: 100px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+}
+
+.gearThumb img:hover {
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+/* gearBox for all */
+@media (min-width: 0px) {
+
+  .gearBox {
+    width: 416px;
+    height: auto;
+    margin: auto;
+  }
+
+  .gearCaption {
+    text-align: center;
+  }
+
+}
+
+/* Resize gearBox to 4 gears across when resolution is above 640px */
+@media all and (min-width: 640px) {
+
+  .gearBox {
+    width: 416px;
+    height: auto;
+    margin: auto;
+  }
+
+}
+
+/* Resize gearBox to 2 gears across when resolution is under 480px */
+@media (max-width: 480px) and (min-width: 0px) {
+
+  .gearBox {
+    width: 208px;
+  }
+
+}
+
+
+/***************************************
+   MAIN NAVIGATION
+ ****************************************/
+ 
+.mainNav {
+  padding: 0px;
+}
+
+.nav-bar {
+  background: transparent;
+  margin: 0 auto 0 auto;
+}
+
+.nav-bar li,
+.nav-bar li:first-child,
+.nav-bar li:last-child,
+.nav-bar li.active {
+  width: 100px;
+  height: 100px;
+  border: none;
+  font-size: 1.0em;
+  margin-top: 0px;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  background: transparent url('images/navigation/Gear.png') center center no-repeat;
+}
+
+.nav-bar .menu-item a,
+.nav-bar .menu-item a:active {
+  display: block;
+  width: inherit;
+  height: inherit; 
+  text-indent: -500px;
+  color: #000000;
+  font-size: 1.0em;
+  border: none;
+  overflow: hidden;
+  position: absolute;
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0px 0px 2px #f2f1db;
+  padding: 42px 0px 0px 0px!important;
+  color: #666666!important;
+  line-height: normal;
+}
+
+.nav-bar .menu-item:hover,
+.nav-bar li.active:hover {
+  background: transparent url('images/navigation/Gear.png') center center no-repeat;
+  transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.nav-bar .menu-item a:hover {
+  text-indent: 0px;
+}
+
+
+/***************************************
+   MAIN NAVIGATION
+   standard, top
+ ****************************************/
+
+@media (min-width: 600px) {
+
+.nav-bottom {
+  display: none;
+}
+
+.nav-top {
+  display: block;
+  width: 520px!important;
+  margin: 15px auto 30px auto!important;
+}
+
+.nav-top .menu-item {
+  margin: 0 15px;
+  float: left;
+}
+
+}
+ 
+/***************************************
+   MAIN NAVIGATION
+   mobile, bottom
+ ****************************************/
+
+@media (max-width: 600px) {
+
+.nav-top {
+  display: none;
+}
+
+.nav-bottom {
+  display: block;
+  width: 150px!important;
+  height: 400px!important;
+  padding: 0px!important;
+  margin: 20px auto 5px auto!important;
+}
+
+.nav-bottom .menu-item,
+.nav-bottom ul li {
+  margin: auto;
+  width: 150px!important;
+}
+
+.nav-bottom .menu-item a {
+  text-indent: 0px;
+}
+
+}
+
+
+
+
+/***************************************
+   TABLE
+ ****************************************/
+
+table,
+table tbody tr td,
+table tbody tr:nth-child(even),
+table tbody tr:nth-child(odd) {
+  background: none;
+  border: none;
+  color: #999999;
+  padding: 1px;
+}
+
+
+/***************************************
+   FRONT PAGE HOVER IMAGE
+ ****************************************/
+
+.hoverBox {
+  width: 520px;
+  height: 320px;
+  position: relative;
+  margin: auto;
+}
+
+.hoverTop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+.hoverTop:hover {
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+
+.hoverBottom {
+  position: relative;
+  margin: 0;
+  left: 0;
+  top: 0;
+}
+
+/* Resize hoverBox to 100% width when resolution is under 520px */
+@media all and (max-width: 520px) and (min-width: 0px) {
+
+  .hoverBox {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+  }
+
+}
+
+/***************************************
+   BOX LINK
+ ****************************************/
+
+.boxLink {
+  float: right;
+  text-align: right;
+  border-left: 20px solid #cccccc;
+  padding-left: 5px;
+}
+
+/****************************************
+   SIDEBAR
+ ****************************************/
+
+#secondary h4,
+#secondary .widget-title {
+  display: none;
+}
+
+#secondary {
+  position: fixed;
+  z-index: 20;
+  margin: auto;
+  right: 0px;
+  top: 40%;
+  width: 100px;
+  background: #666666;
+  -webkit-border-top-left-radius: 30px;
+  -webkit-border-bottom-left-radius: 30px;
+  -moz-border-top-left-radius: 30px;
+  -moz-border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  filter: alpha(opacity=70);
+  opacity: 0.7;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+
+#secondary:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+  width: 200px;
+}
+
+#secondary ul {
+  list-style-type: none;
+  padding: 5px;
+  margin: 10px;
+}
+
+#secondary ul li {
+  border-bottom: 1px solid #999;
+  margin: 10px 0px;
+  height: 16px;
+  overflow: hidden;
+}
+
+#secondary ul li a {
+  display: block;
+  color: #cccccc;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 0.8em;
+}
+
+#secondary ul li a:hover {
+  color: #CEE66A;
+}
+
+/* Move and maximize secondary menu when resolution is under 768px*/
+@media (max-width: 768px) and (min-width: 0px) {
+
+  #secondary {
+
+    /* Disabled to avoid redundancy */
+    display: none;
+
+    position: relative;
+    width: 100%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+  
+  #secondary ul li {
+    height: 120%;
+  }
+
+  #secondary ul li a {
+    text-align: center;
+  }
+
+}
