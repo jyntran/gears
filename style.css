@@ -374,7 +374,7 @@ h3 {
    standard, top
  ****************************************/
 
-@media (min-width: 600px) {
+@media (min-width: 481px) {
 
 .nav-bottom,
 .nav-heading {
@@ -399,7 +399,7 @@ h3 {
    mobile, bottom
  ****************************************/
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
 /*.nav-top {
   display: none;
