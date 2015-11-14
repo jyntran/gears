@@ -49,5 +49,4 @@ add_action('wp_head', 'blog_favicon');
  *******/
 
 
-
 ?>

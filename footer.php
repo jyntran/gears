@@ -25,7 +25,7 @@
 			?>
 			<div id="footer" class="row" role="contentinfo">
 				<div class="twelve columns">
-					<p><a href="https://www.student.cs.uwaterloo.ca/~j44tran" title="J. Tran">&copy 2013 J. Tran</a><p>
+					<p><a href="http://jyntran.ca" title="J. Tran">&copy 2013-<?php echo date('Y')?> J. Tran</a><p>
 					<!-- No Credits <?php do_action( 'required_slim_credits' ); ?><a href="<?php echo esc_url( __( 'http://wordpress.org/', 'requiredfoundation' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'requiredfoundation' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s.', 'requiredfoundation' ), 'WordPress' ); ?></a></p> -->
 				</div>
 <!--

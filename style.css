@@ -14,6 +14,23 @@ Template: required-foundation
    GENERAL
  ****************************************/
 
+/* latin-ext */
+@font-face {
+  font-family: 'District';
+  font-style: normal;
+  font-weight: 400;
+  src: local('District'), local('District-Regular'), url('fonts/district/distproth-webfont.woff2') format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'District';
+  font-style: normal;
+  font-weight: 400;
+  src: local('District'), local('District-Regular'), url('fonts/district/distproth-webfont.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 body {
   font-size: 100%;
 }
@@ -22,7 +39,19 @@ body, page, .entry_content,
 h1, h2, h3, h4, h5, h6 {
   color: #999999;
   text-transform: uppercase;
-  font-family: calibri, sans-serif;
+  font-family: District, Avenir, Calibri, sans-serif;
+}
+
+body, page, .entry_content {
+  text-transform: none;
+}
+
+hr {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  height: 20px;
+  border-top: 1px solid #999;
 }
 
 ::selection {
@@ -47,11 +76,12 @@ a:hover {
 
 .entry-header h1, h2 {
   letter-spacing: 5px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-transform: uppercase;
   width: 100%;
-  border-bottom: 1px solid #999;
   text-align: left;
+  padding: 0;
+  margin: 0;
 }
 
 h3 {
@@ -79,6 +109,7 @@ h3 {
   font-size: 0.7em;
   text-transform: uppercase;
   text-align: left;
+  clear: both;
 }
 
 .subheading {
@@ -92,7 +123,7 @@ h3 {
 
   #site-title {
     font-size: 1.6em;
-    margin: 15px;
+    margin: 32px;
   }
 
 }
@@ -119,6 +150,16 @@ h3 {
   display: none;
 }
 
+/*
+.entry-content img {
+  width: 100%;
+}
+*/
+
+.fullwidth {
+  width: 100%;
+}
+
 
 /***************************************
    GEAR THUMBNAIL
@@ -135,6 +176,11 @@ h3 {
   width: 100px;
 }
 
+.gearCaptionBox {
+  width: 150px;
+  margin: auto;
+}
+
 .gearSubtitle {
   width: 200px;
   vertical-align: middle;
@@ -148,7 +194,8 @@ h3 {
   background: #000000 url('images/navigation/Gear-w.png');
   width: 100px;
   height: 100px;
-  display: inline-block;
+/**  display: inline-block; **/
+  display: block;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
@@ -158,7 +205,8 @@ h3 {
   transition-duration: 1s;
   filter: alpha(opacity=70);
   opacity: 0.7;
-  margin: 0 2px;
+/**  margin: 0 2px; **/
+  margin: auto;
 }
 
 .gearThumb:hover {
@@ -196,14 +244,24 @@ h3 {
 @media (min-width: 0px) {
 
   .gearBox {
-    width: 416px;
+/**    width: 416px; **/
+    width: 33%;
     height: auto;
     margin: auto;
+    display: inline-block;
   }
 
   .gearCaption {
     text-align: center;
   }
+
+  .entry-content {
+    margin: 0 150px;
+  }
+
+  .entry-header {
+    margin: auto 150px;
+  } 
 
 }
 
@@ -211,10 +269,20 @@ h3 {
 @media all and (min-width: 640px) {
 
   .gearBox {
-    width: 416px;
+/**    width: 416px; **/
+    width: 33%;
     height: auto;
     margin: auto;
+    display: inline-block;
   }
+
+  .entry-content {
+    margin: 0 50px;
+  }
+
+  .entry-header {
+    margin: auto 50px;
+  } 
 
 }
 
@@ -222,8 +290,19 @@ h3 {
 @media (max-width: 480px) and (min-width: 0px) {
 
   .gearBox {
-    width: 208px;
+/**    width: 208px; **/
+    width: 100%;
+    display: inline-block;
   }
+
+  .entry-content {
+    margin: 0;
+  }
+
+  .entry-header {
+    margin: auto 0px;
+  } 
+
 
 }
 
@@ -268,6 +347,7 @@ h3 {
   border: none;
   overflow: hidden;
   position: absolute;
+  text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   text-shadow: 0px 0px 2px #f2f1db;
@@ -367,8 +447,8 @@ table tbody tr:nth-child(odd) {
  ****************************************/
 
 .hoverBox {
-  width: 520px;
-  height: 320px;
+  width: 360px;
+  height: 360px;
   position: relative;
   margin: auto;
 }
@@ -378,6 +458,8 @@ table tbody tr:nth-child(odd) {
   left: 0;
   top: 0;
   margin: 0;
+  width: 100%;
+  height: 100%;
   -moz-transition-duration: 1s;
   -o-transition-duration: 1s;
   -webkit-transition-duration: 1s;
@@ -394,10 +476,12 @@ table tbody tr:nth-child(odd) {
   margin: 0;
   left: 0;
   top: 0;
+  width: 100%;
+  height: 100%;
 }
 
-/* Resize hoverBox to 100% width when resolution is under 520px */
-@media all and (max-width: 520px) and (min-width: 0px) {
+/* Resize hoverBox to 100% width when resolution is under 600px */
+@media all and (max-width: 600px) and (min-width: 0px) {
 
   .hoverBox {
     width: 100%;
@@ -509,3 +593,24 @@ table tbody tr:nth-child(odd) {
   }
 
 }
+
+.slb_data_title {
+  text-transform: uppercase;
+  font-family: Calibri, sans-serif!important;
+  color: #666666;
+  font-size: 1.1em!important;
+}
+
+.slb_details {
+  display: none;
+}
+
+/****************************************
+   ISSUU
+ ****************************************/
+
+.issuuembed {
+  width: 100%;
+  height: 320px;
+}
+
