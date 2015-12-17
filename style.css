@@ -71,7 +71,7 @@ a {
 }
 
 a:hover {
-  color: #CEE66A;
+  color: #d6deb6;
 }
 
 .entry-header h1, h2 {
@@ -356,6 +356,8 @@ h3 {
   padding: 42px 0px 0px 0px!important;
   color: #666666!important;
   line-height: normal;
+  background-color: rgba(249,249,232,0);
+  border-radius: 100%;
 }
 
 .nav-bar .menu-item:hover,
@@ -368,12 +370,9 @@ h3 {
 
 .nav-bar .menu-item a:hover {
   text-indent: 0px;
+  background-color: rgba(249,249,232,0.8);
+  //box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
 }
-
-.nav-bar .menu-item-text {
-  background: rgba(255,255,255,100);
-}
-
 
 /***************************************
    MAIN NAVIGATION
@@ -412,7 +411,7 @@ h3 {
 
 .nav-bottom {
   display: block;
-  width: 150px!important;
+  width: 100px!important;
   height: 400px!important;
   padding: 0px!important;
   margin: 20px auto 5px auto!important;
@@ -421,7 +420,7 @@ h3 {
 .nav-bottom .menu-item,
 .nav-bottom ul li {
   margin: auto;
-  width: 150px!important;
+  width: 100px!important;
 }
 
 .nav-bottom .menu-item a {
@@ -572,7 +571,7 @@ table tbody tr:nth-child(odd) {
 }
 
 #secondary ul li a:hover {
-  color: #CEE66A;
+  color: #d6deb6;
 }
 
 /* Move and maximize secondary menu when resolution is under 768px*/
