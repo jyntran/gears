@@ -109,6 +109,7 @@ h3 {
   font-size: 0.7em;
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 0;
   clear: both;
 }
 
@@ -179,6 +180,7 @@ h3 {
 .gearCaptionBox {
   width: 150px;
   margin: auto;
+  margin-bottom: 17px;
 }
 
 .gearSubtitle {
@@ -366,6 +368,10 @@ h3 {
 
 .nav-bar .menu-item a:hover {
   text-indent: 0px;
+}
+
+.nav-bar .menu-item-text {
+  background: rgba(255,255,255,100);
 }
 
 
@@ -614,3 +620,11 @@ table tbody tr:nth-child(odd) {
   height: 320px;
 }
 
+/****************************************
+   LIGHTHOUSE
+ ****************************************/
+
+.lighthouse-icon {
+  line-height: 0;
+  font-size: 14px;
+}
