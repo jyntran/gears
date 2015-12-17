@@ -9,12 +9,6 @@
  */
 ?>
 
-<div class="row nav-bottom">
-	<div class="twelve columns centered mainNav">
-		<?php get_template_part( 'nav' ); ?>
-	</div>
-</div>
-
 		<?php
 			/*
 				A sidebar in the footer? Yep. You can can customize

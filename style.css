@@ -379,9 +379,10 @@ h3 {
    standard, top
  ****************************************/
 
-@media (min-width: 600px) {
+@media (min-width: 481px) {
 
-.nav-bottom {
+.nav-bottom,
+.nav-heading {
   display: none;
 }
 
@@ -403,34 +404,70 @@ h3 {
    mobile, bottom
  ****************************************/
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
 
-.nav-top {
+/*.nav-top {
   display: none;
-}
+}*/
 
-.nav-bottom {
+.nav-bar {
   display: block;
-  width: 100px!important;
+  width: 150px!important;
   height: 400px!important;
   padding: 0px!important;
-  margin: 20px auto 5px auto!important;
+  /*margin: 20px auto 5px auto!important;*/
 }
 
-.nav-bottom .menu-item,
-.nav-bottom ul li {
+.nav-bar.menu-item,
+.nav-bar ul li {
   margin: auto;
-  width: 100px!important;
+  width: 150px!important;
 }
 
-.nav-bottom .menu-item a {
+.nav-bar .menu-item a {
   text-indent: 0px;
+  padding: 16px!important;
+}
+
+.nav-bar .menu-item a:active {
+  position: relative;
+}
+
+.nav-bar li,
+.nav-bar li:first-child,
+.nav-bar li:last-child {
+  background: none;
+  width: auto;
+  height: auto;
+  margin: 24px 0;
+}
+
+.nav-bar .menu-item:hover,
+.nav-bar li.active:hover {
+  background: none;
+  transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+}
+
+.nav-heading {
+  text-align: center;
+}
+
+#access {
+  height: 48px;
+  overflow: hidden;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+
+#access:hover {
+  height: 360px;
 }
 
 }
-
-
-
 
 /***************************************
    TABLE

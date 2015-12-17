@@ -12,6 +12,7 @@
 ?>
 				<!-- START: nav.php -->
 				<nav id="access" role="navigation">
+				<div class="nav-heading nav-heading-menu"><span>MENU</span></div>
 					<?php
 					    wp_nav_menu( array(
 							'theme_location' => 'primary',
