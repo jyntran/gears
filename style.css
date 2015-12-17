@@ -71,7 +71,7 @@ a {
 }
 
 a:hover {
-  color: #CEE66A;
+  color: #d6deb6;
 }
 
 .entry-header h1, h2 {
@@ -109,6 +109,7 @@ h3 {
   font-size: 0.7em;
   text-transform: uppercase;
   text-align: left;
+  margin-bottom: 0;
   clear: both;
 }
 
@@ -179,6 +180,7 @@ h3 {
 .gearCaptionBox {
   width: 150px;
   margin: auto;
+  margin-bottom: 17px;
 }
 
 .gearSubtitle {
@@ -354,6 +356,8 @@ h3 {
   padding: 42px 0px 0px 0px!important;
   color: #666666!important;
   line-height: normal;
+  background-color: rgba(249,249,232,0);
+  border-radius: 100%;
 }
 
 .nav-bar .menu-item:hover,
@@ -366,8 +370,9 @@ h3 {
 
 .nav-bar .menu-item a:hover {
   text-indent: 0px;
+  background-color: rgba(249,249,232,0.8);
+  //box-shadow: 0px 0px 2px rgba(0,0,0,0.9);
 }
-
 
 /***************************************
    MAIN NAVIGATION
@@ -416,7 +421,7 @@ h3 {
 .nav-bar.menu-item,
 .nav-bar ul li {
   margin: auto;
-  /*width: 150px!important;*/
+  width: 150px!important;
 }
 
 .nav-bar .menu-item a {
@@ -603,7 +608,7 @@ table tbody tr:nth-child(odd) {
 }
 
 #secondary ul li a:hover {
-  color: #CEE66A;
+  color: #d6deb6;
 }
 
 /* Move and maximize secondary menu when resolution is under 768px*/
@@ -649,4 +654,13 @@ table tbody tr:nth-child(odd) {
 .issuuembed {
   width: 100%;
   height: 320px;
+}
+
+/****************************************
+   LIGHTHOUSE
+ ****************************************/
+
+.lighthouse-icon {
+  line-height: 0;
+  font-size: 14px;
 }
