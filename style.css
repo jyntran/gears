@@ -534,6 +534,15 @@ table tbody tr:nth-child(odd) {
 
 }
 
+
+/***************************************
+   TOP BOX
+ ****************************************/
+
+.topbox {
+  height: 3em;
+}
+
 /***************************************
    BOX LINK
  ****************************************/
@@ -541,8 +550,9 @@ table tbody tr:nth-child(odd) {
 .boxLink {
   float: right;
   text-align: right;
-  border-left: 20px solid #cccccc;
+  border-left: 2em solid #cccccc;
   padding-left: 5px;
+  height: 2em;
 }
 
 /****************************************
@@ -664,3 +674,32 @@ table tbody tr:nth-child(odd) {
   line-height: 0;
   font-size: 14px;
 }
+
+/****************************************
+   ROUNDICON
+ ****************************************/
+
+.roundicon {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  position: relative;
+  border-radius: 100%;
+  background-color: #cccccc;
+  text-align: center;
+}
+
+.roundicon:hover {
+  background-color: #999999;
+}
+
+.roundicon-symbol {
+  position: relative;
+  top: 20%;
+  font-size: 1em;
+}
+
+.roundicon span {
+  color: rgba(255,255,255,0.9);
+}
+
