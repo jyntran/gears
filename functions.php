@@ -37,7 +37,12 @@ function blog_favicon() {
 add_action('wp_head', 'blog_favicon');
 
 
+/* Menus */
 
+register_nav_menus( array(
+    'primary' => __( 'Primary Menu', 'yourtheme'),
+    'secondary' => __( 'Secondary Menu', 'yourtheme' ),
+ ) );
 
 
 
