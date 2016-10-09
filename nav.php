@@ -23,4 +23,13 @@
 						) );
 					?>
 				</nav>
+                                <nav role="navigation">
+                                    <div class="nav2-heading nav2-heading-menu">
+                                        <?php
+                                            wp_nav_menu( array(
+                                            'container_class' => 'menu-footer',
+                                            'items_wrap' => '<ul>%3$s</ul>',
+                                            'theme_location' => 'secondary') ); ?>
+                                    </div>
+                                </nav>
 				<!-- END: nav.php -->
